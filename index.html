@@ -1,1 +1,152 @@
-default
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Car Comparison App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The Car Comparison App">
+  <meta name="author" content="This presentation is made by Wai-Wah Liu">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>The Car Comparison App</h1>
+    <h2>See stats of the cars you care about</h2>
+    <p>This presentation is made by Wai-Wah Liu<br/>Use arrow keys or arrow buttons to go through slides</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Have you had enough of....</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Not knowing the key statistics of the car you want to buy?</li>
+<li>Being unclear how different cars compare to eachother?</li>
+<li>Pushy and dodgy car sales men?</li>
+<li class='..'>or maybe you love cars and want to view and compare stats</li>
+</ol>
+
+<h3>....then The Car Comparison App is the app for you!!</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Here&#39;s how it works</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="screenshot1.PNG" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>The App uses the &quot;mtcars&quot; dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Notes</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The previous plot was made with the following embedded code:</p>
+
+<pre><code class="r">data(mtcars)
+par(mar=c(10,4,2,2)+0.1)
+plot(mtcars[5:19 ,4], xaxt=&quot;n&quot;, xlab=&quot;&quot;, ylab=&quot;Horse power&quot;, col=&quot;red&quot;, pch=19, cex=1.5)
+axis(labels=row.names(mtcars)[5:19], at=1:length(5:19), las=2, side=1)
+</code></pre>
+
+<p>The following variables are available to examine:</p>
+
+<ul>
+<li>Amount of cylinders  - Displacement</li>
+<li>Horse power          - Rear axle ratio</li>
+<li>Weight               - Quarter mile time</li>
+<li>Number of gears      - Number of carburetors</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Have you had enough of....'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Here&#39;s how it works'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The App uses the &quot;mtcars&quot; dataset'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Notes'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
